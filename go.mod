@@ -1,4 +1,4 @@
-module github.com/gotomicro/ego-component/etoken
+module github.com/ego-component/etoken
 
 go 1.17
 
