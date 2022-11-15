@@ -72,7 +72,7 @@ func (c *Component) RefreshAccessToken(ctx context.Context, tokenStr string, sta
 		err = fmt.Errorf("RefreshAccessToken failed, err: %w", err)
 		return
 	}
-	uid := sc["jti"].(float64)
+	uid := sc["sub"].(float64)
 	uidInt := int(uid)
 	return c.CreateAccessToken(ctx, uidInt, startTime)
 }
